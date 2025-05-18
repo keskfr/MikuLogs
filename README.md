@@ -45,7 +45,7 @@ Flask
 
 Bibliotecas estándar de Python: os, re, threading, time, random
 
-#🚀 Potenciales Mejoras
+# 🚀 Potenciales Mejoras
 Integración con Logs Reales: Modificar el código para leer logs de fuentes reales (archivos de sistema, bases de datos, etc.).
 
 Control de la generación automática de logs desde la interfaz web.
@@ -55,3 +55,5 @@ Opciones de filtrado y búsqueda en la visualización de logs.
 Persistencia de la configuración del diccionario a través de una base de datos.
 
 Manejo de logs más grandes de manera eficiente.
+
+# A disfrutar nomás ;D
