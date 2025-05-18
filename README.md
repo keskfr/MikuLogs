@@ -22,7 +22,6 @@ Además, la aplicación genera automáticamente líneas de log en segundo plano,
 
 ✨ Interfaz Minimalista: Diseño limpio y sencillo para una fácil visualización.
 
-
 # 📂 Estructura del Proyecto
 tu_proyecto/
 ├── app.py              # Script principal de la aplicación Flask (backend y generación de logs)
@@ -36,14 +35,14 @@ tu_proyecto/
     └── index.html      # Página principal del monitor
 
 
-#⚙️ Configuración
+# ⚙️ Configuración
 diccionario.txt: Edita este archivo para definir tus palabras clave y las respuestas asociadas. Cada línea debe tener el formato palabra_clave|Mensaje de respuesta. Las líneas que comienzan con # son ignoradas.
 
 app.log: Este es el archivo que la aplicación monitoreará y en el que escribirá logs generados automáticamente (para demostración). El script app.py lo creará si no existe.
 
 static/banner.png: Coloca la imagen que deseas usar como banner en la carpeta static/ y asegúrate de que el nombre del archivo coincida con el especificado en templates/index.html.
 
-#▶️ Uso
+# ▶️ Uso
 Asegúrate de tener Python 3.6+ y Flask instalados (pip install Flask).
 
 Ejecuta el script principal: python app.py
@@ -52,7 +51,7 @@ Abre tu navegador y ve a http://127.0.0.1:5000/.
 
 Verás la interfaz del monitor de logs, que se actualizará automáticamente con los logs generados. Las líneas que contengan palabras clave del diccionario mostrarán las respuestas asociadas.
 
-#📚 Dependencias
+# 📚 Dependencias
 Python 3.6+
 
 Flask
