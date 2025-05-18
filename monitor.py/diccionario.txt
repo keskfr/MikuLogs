@@ -1,0 +1,20 @@
+# Formato: palabra_clave|mensaje_de_respuesta
+# Comentarios comienzan con #
+
+error|❌ [ERROR] Detección crítica - acción inmediata requerida
+fail|❌ Operación fallida - revisar logs
+exception|⚠️ Excepción no controlada - notificar al equipo
+
+warning|⚠️ Advertencia del sistema - monitorear
+alert|🔔 Alerta de seguridad potencial
+
+started|🟢 Sistema iniciado correctamente
+shutdown|🔴 Sistema apagado
+
+success|✅ Operación completada con éxito
+complete|✔️ Proceso finalizado satisfactoriamente
+
+timeout|⏱️ Timeout detectado - revisar conexiones
+database|🗄️ Evento de base de datos detectado
+user|👤 Acción de usuario registrada
+network|🌐 Problema de red identificado

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monitor de Logs</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    </head>
+<body>
+    <div class="container">
+        <h1>Monitor de Logs</h1>
+        <div class="banner-container">
+            <img src="{{ url_for('static', filename='banner.png') }}" alt="Banner del Monitor de Logs" class="banner-image">
+        </div>
+
+        <div id="logs-container">
+            </div>
+
+        <div class="controls">
+            <button id="clear-logs-button">Limpiar logs</button>
+        </div>
+
+        <div class="log-count">
+            Logs cargados: <span id="loaded-log-count">0</span>
+        </div>
+
+    </div>
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>
