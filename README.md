@@ -24,15 +24,15 @@ Además, la aplicación genera automáticamente líneas de log en segundo plano,
 
 # 📂 Estructura del Proyecto
 tu_proyecto/
-├── app.py              # Script principal de la aplicación Flask (backend y generación de logs)
-├── app.log             # Archivo de log que será monitoreado y escrito
-├── diccionario.txt     # Archivo con palabras clave y respuestas
-├── static/             # Archivos estáticos (CSS, JS, Imágenes)
-│   ├── styles.css      # Estilos para la interfaz (minimalista azul)
-│   ├── app.js          # Lógica del frontend (carga y muestra logs)
-│   └── banner.png      # Imagen para el banner (reemplaza con tu imagen)
-└── templates/          # Archivos HTML renderizados por Flask
-    └── index.html      # Página principal del monitor
+├── app.py              Script principal de la aplicación Flask (backend y generación de logs)
+├── app.log             Archivo de log que será monitoreado y escrito
+├── diccionario.txt     Archivo con palabras clave y respuestas
+├── static/             Archivos estáticos (CSS, JS, Imágenes)
+│   ├── styles.css      Estilos para la interfaz (minimalista azul)
+│   ├── app.js          Lógica del frontend (carga y muestra logs)
+│   └── banner.png      Imagen para el banner (reemplaza con tu imagen)
+└── templates/          Archivos HTML renderizados por Flask
+    └── index.html      Página principal del monitor
 
 
 # ⚙️ Configuración
