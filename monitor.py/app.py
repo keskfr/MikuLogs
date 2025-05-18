@@ -160,24 +160,33 @@ def api_logs():
     logs = leer_logs() # Llama a la función que lee los logs (modificable para logs reales)
     diccionario = cargar_diccionario()
 
+    # Obtiene los logs a partir del offset especificado
     logs_nuevos = logs[offset:] if offset < len(logs) else []
 
     resultado = []
+    # Itera sobre cada línea de log nueva para procesarla
     for line in logs_nuevos:
         line_lower = line.lower()
         claves_encontradas = []
         mensajes_asociados = []
+
+        # Itera sobre cada par clave-valor del diccionario para buscar coincidencias
         for key, msg in diccionario.items():
             if re.search(r'\b' + re.escape(key) + r'\b', line_lower):
                 claves_encontradas.append(key)
                 mensajes_asociados.append(msg)
 
-        resultado.append({
-            "texto": line,
-            "tags": claves_encontradas,
-            "mensajes": mensajes_asociados
-        })
+        # ### CAMBIO AÑADIDO: FILTRAR LOGS SIN PALABRAS CLAVE ###
+        # Solo añade la entrada al resultado si se encontraron palabras clave en la línea
+        if claves_encontradas:
+            resultado.append({
+                "texto": line,
+                "tags": claves_encontradas,
+                "mensajes": mensajes_asociados
+            })
 
+    # Retorna el resultado como un objeto JSON, incluyendo el total de líneas de log
+    # Nota: total_lines sigue reflejando el total del archivo, no solo los filtrados
     return jsonify({
         "logs": resultado,
         "total_lines": len(logs)
